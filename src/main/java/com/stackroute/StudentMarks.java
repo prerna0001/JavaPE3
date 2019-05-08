@@ -15,13 +15,13 @@ public class StudentMarks {
     public void grade()
     {
         System.out.println("enter number of students \n");
-        numOfStudents=input.nextInt();
-        stuGrade=new int[numOfStudents];
+        numOfStudents=input.nextInt(); //taking number of students
+        stuGrade=new int[numOfStudents];  //initializing array
         for(int i=0; i<numOfStudents;i++)
         {
             System.out.println("Enter grade for student "+ (i+1));
             stuGrade[i]=input.nextInt();
-            if(stuGrade[i]<0 || stuGrade[i]>100)
+            if(stuGrade[i]<0 || stuGrade[i]>100) //checking range of marks
             {
                 System.out.println("ERROR!!! \n Enter grade between 0-100");
             }
@@ -31,8 +31,8 @@ public class StudentMarks {
 
     public static void main(String[] args)
     {
-        StudentMarks s=new StudentMarks();
-        s.grade();
+        StudentMarks s=new StudentMarks(); //object of StudentsMarks class
+        s.grade();  //grade() method call
     }
 
 

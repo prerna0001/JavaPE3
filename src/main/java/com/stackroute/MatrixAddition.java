@@ -28,7 +28,7 @@ public class MatrixAddition {
         matrix2=new int[rows][cols];
         sum=new int[rows][cols];
 
-        for(int i=0;i<rows;i++)
+        for(int i=0;i<rows;i++) //taking 1 matrix
         {
             for(int j=0;j<cols;j++)
             {
@@ -38,7 +38,7 @@ public class MatrixAddition {
             }
         }
 
-        for(int i=0;i<rows;i++)
+        for(int i=0;i<rows;i++) //taking 2 matrix
         {
             for(int j=0;j<cols;j++)
             {
@@ -47,7 +47,7 @@ public class MatrixAddition {
 
             }
         }
-        System.out.println("Matrix 1 is : ");
+        System.out.println("Matrix 1 is : "); //to print matrix 1
         for(int i=0;i<rows;i++)
         {
             for(int j=0;j<cols;j++)
@@ -57,7 +57,7 @@ public class MatrixAddition {
             }
         }
 
-        System.out.println("Matrix 2 is : ");
+        System.out.println("Matrix 2 is : ");  //to print matrix 1
         for(int i=0;i<rows;i++)
         {
             for(int j=0;j<cols;j++)
@@ -66,7 +66,7 @@ public class MatrixAddition {
 
             }
         }
-        System.out.println("Sum is : ");
+        System.out.println("Sum is : "); //for sum
 
         for(int i=0;i<rows;i++)
         {

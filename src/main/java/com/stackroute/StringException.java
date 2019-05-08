@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class StringException {
     public void check(int a) throws InvalidNumberException
     {
-        if (a<10)
+        if (a<10) //checking a number < 10
         {
             InvalidNumberException invalid=new InvalidNumberException("Invalid number");
             throw invalid;
@@ -29,16 +29,16 @@ public class StringException {
 
         System.out.println("enter num you want to check ");
         a=input.nextInt();
-        try
+        try //try block for InvalidNumberException
         {
                 s.check(a);
         }
-        catch (InvalidNumberException e)
+        catch (InvalidNumberException e) //catch block for InvalidNumberException
         {
             System.out.println(e.getMessage());
         }
 
-        finally {
+        finally { //finally block
             System.out.println("In Finally Block");
         }
 

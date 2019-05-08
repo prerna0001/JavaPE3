@@ -23,7 +23,7 @@ public class Chess {
         {
             for (int j=0;j<=7;j++)
             {
-                if((i+j)%2==0)
+                if((i+j)%2==0) //for alternate positions
                 {
                     System.out.print("WW |");
                 }
@@ -31,13 +31,13 @@ public class Chess {
                     System.out.print("BB |");
                 }
             }
-            System.out.println("");
+            System.out.println(""); //for new line
         }
 
     }
 
     public static void main(String[] args) {
-        Chess c=new Chess();
+        Chess c=new Chess(); //object created of class Chess
         c.chessBoard();
     }
 }

@@ -28,7 +28,7 @@ public class Places
         System.out.print("Enter a String : ");
         original = input.nextLine();
 
-        strNew = original.replaceAll("[aeiouAEIOU]", "");
+        strNew = original.replaceAll("[aeiouAEIOU]", ""); //replacing all vowles with null
 
         System.out.print("Place Name without Vowels :\n");
 
