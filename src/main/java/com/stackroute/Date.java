@@ -14,15 +14,13 @@ public class Date {
 
     public void weekdate()
     {
-        Calendar c = Calendar.getInstance();
-        c.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY); //setting date
+        Calendar c = Calendar.getInstance(); //getting date from system
+        c.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY); //setting monday as first day of week
         System.out.println();
-        DateFormat df = new SimpleDateFormat("EEE dd/MM/yyyy");
+        DateFormat df = new SimpleDateFormat("EEE dd/MM/yyyy HH/mm/sss");
         System.out.println("First Date of the week: " + df.format(c.getTime())); //printing first day
-        for (int i = 0; i <6; i++) //finding last week day
-        {
-            c.add(Calendar.DATE, 1);
-        }
+
+        c.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY); //setting sunday as last day of week
         System.out.println("Last Date of the week: " + df.format(c.getTime())); //printing last day
         System.out.println();
     }
